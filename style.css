@@ -1,0 +1,61 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+.top-section {
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #444c56;
+}
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #2f81f7;
+}
+.highlight {
+  color: #58a6ff;
+}
+.subtitle {
+  color: #8b949e;
+}
+.buttons {
+  margin-top: 1rem;
+}
+.btn {
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+.contact {
+  background-color: #2386f2;
+  color: white;
+}
+.projects {
+  background-color: #2ea043;
+  color: white;
+}
+section {
+  margin-top: 2rem;
+}
+.logo {
+  width: 90px;
+  margin-bottom: 0.5rem;
+}
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #8b949e;
+}
