@@ -1,0 +1,47 @@
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 60px 20px;
+}
+.profile-pic {
+    width: 180px;
+    border-radius: 50%;
+    border: 4px solid #58a6ff;
+}
+h1 {
+    font-size: 2.5em;
+    color: #58a6ff;
+}
+h2 {
+    font-size: 1.5em;
+    color: #8b949e;
+}
+.tagline {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #c9d1d9;
+}
+.buttons {
+    margin-top: 30px;
+}
+.buttons a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 25px;
+    background-color: #238636;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.buttons a:hover {
+    background-color: #2ea043;
+}
