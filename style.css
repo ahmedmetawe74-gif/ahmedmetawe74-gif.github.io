@@ -1,0 +1,75 @@
+/* Dark theme with blue accents, layout mirroring the reference */
+:root{
+  --bg:#0b0f16; --bg-alt:#0e1420; --card:#111827;
+  --text:#cfd8e3; --muted:#9aa8bd; --accent:#589bff; --border:#1f2937;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+*{box-sizing:border-box} html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Noto Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.nav{position:sticky;top:0;z-index:100;background:rgba(11,15,22,.8);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;gap:20px;min-height:64px}
+.brand{font-weight:800}.brand .accent{color:var(--accent)}
+.links{margin-left:auto;display:flex;gap:18px;flex-wrap:wrap}
+.links a{color:var(--text);text-decoration:none;font-weight:600}
+.links .resume{border:1px solid var(--accent);padding:8px 12px;border-radius:10px}
+
+.hero{padding:80px 0 40px;border-bottom:1px solid var(--border)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+.hero-text h1{margin:0 0 6px;font-size:40px}
+.hero-text h1 span{color:#fff}
+.hero-text h2{margin:0 0 12px;font-weight:700;color:#d7e2f1}
+.lead{max-width:54ch;color:#d7e2f1}
+.hero-card{background:linear-gradient(180deg,rgba(40,62,105,.35),rgba(17,24,39,.95));border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+.avatar{width:100%;height:180px;object-fit:cover;border-radius:12px;background:#0f172a;border:1px solid var(--border)}
+.facts{list-style:none;padding:0;margin:12px 0 0;color:var(--muted)}
+.facts li{margin:6px 0}
+
+.btn{display:inline-block;padding:12px 16px;border-radius:10px;border:1px solid var(--accent);text-decoration:none;font-weight:700}
+.btn.primary{background:linear-gradient(135deg,var(--accent),#2b6bff);color:#fff;border-color:transparent}
+.btn.ghost{background:transparent;color:var(--text)}
+
+.section{padding:64px 0;border-bottom:1px solid var(--border)}
+.section.alt{background:var(--bg-alt)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.plain{list-style:none;padding:0;margin:0}
+.ticks{margin:0;padding-left:20px}
+.ticks li{margin:6px 0}
+
+.timeline .item{padding:14px 0;border-left:2px solid var(--accent);margin-left:10px;padding-left:16px}
+.timeline .time{color:var(--muted);font-size:14px}
+.timeline .role{font-weight:800}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.project{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+.project h3{margin:6px 0 8px}
+
+.skill-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.skill{background:#0f172a;border:1px solid var(--border);border-radius:12px;padding:12px}
+.skill span{display:block;margin-bottom:8px}
+.bar{height:8px;border:1px solid #2a3a5a;border-radius:999px;background:#0b1220;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#2b6bff)}
+
+.contact-form label{display:block;font-weight:600;margin:10px 0 6px}
+.contact-form input,.contact-form textarea{width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);background:#0b1220;color:var(--text)}
+
+.footer{padding:28px 0;color:var(--muted)}
+.foot-flex{display:flex;align-items:center;justify-content:space-between}
+.icons a{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:1px solid var(--border);border-radius:8px;color:var(--muted);text-decoration:none;margin-left:8px}
+
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal-content{max-width:720px;width:100%;background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);padding:20px}
+.modal .close{position:absolute;right:28px;top:20px;background:transparent;border:none;font-size:28px;color:#fff;cursor:pointer}
+
+@media (max-width:900px){
+  .hero-grid,.two-col,.split,.cards,.skill-grid{grid-template-columns:1fr}
+}
+
+
+/* Company logos inside timeline roles */
+.role .company{height:22px;vertical-align:middle;margin-right:10px;border-radius:4px;border:1px solid var(--border)}
